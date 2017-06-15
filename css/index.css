@@ -141,40 +141,43 @@ a:hover {
 .carousel {
   position: relative;
   width:100%;
-  height:600px;
   margin:0 auto;
   overflow: hidden;
 }
 .img-ct {
   position: relative;
+  width:100%;
+  margin:0 auto;
+  height:600px;
 }
 .img-ct > li {
-  float:left;
+  width:100%;
+  height:600px;
 }
-.img-ct img {
+/*.img-ct img {
   width: 100%;
-  height:100%;
-}
-/*.img-ct > li img:first-of-type {
-  background:url("../img/mv2_d12.jpg") center center no-repeat;
+  height:600px;
+}*/
+.img-ct > li:first-child {
+  background:url("../img/bg-0.png") center center no-repeat;
   background-size: cover;
   background-color:#c4e9fc;
 }
-.img-ct > li img:nth-child(2) {
-  background:url("../img/mv2_d6.jpg") center center no-repeat;
+.img-ct > li:nth-child(2) {
+  background:url("../img/bg_1.jpg") center center no-repeat;
   background-size: cover;
   background-color:#fdd048;
 }
-.img-ct > li img:nth-child(3) {
-  background:url("../img/mv2_d9.jpg") center center no-repeat;
+.img-ct > li:nth-child(3) {
+  background:url("../img/bg-2.jpg") center center no-repeat;
   background-size: cover;
   background-color:#8bc453;
 }
-.img-ct > li img:nth-child(4) {
+.img-ct > li:nth-child(4) {
   background:url("../img/mv2_d0.jpg") center center no-repeat;
   background-size: cover;
   background-color:lightpink;
-}*/
+}
 .btn {
   position: absolute;
   top: 50%;
@@ -237,10 +240,6 @@ a:hover {
 }
 
 /** #header **/
-#header>.container {
-  text-align:center;
-  padding:50px 0;
-}
 .carousel-wrap .slogan {
   position:absolute;
   left:25%;
@@ -254,7 +253,7 @@ a:hover {
   font-size: 30px;
   line-height: 30px;
   margin-bottom:30px;
-  color:#555;
+  color:#fff;
 }
 .carousel-wrap .slogan>h1 {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -263,7 +262,7 @@ a:hover {
   line-height: 75px;
   margin-bottom: 50px;
   color:#fff;
-  text-shadow: 3px 4px 6px #aaa;
+  text-shadow: 2px 3px 2px rgba(0,0,0,0.2);
 }
 .carousel-wrap .slogan>.shop-btn {
   color: #fff;
@@ -274,6 +273,7 @@ a:hover {
   border-radius: 3px;
   font-size: 18px;
   padding: 20px 40px;
+  cursor: pointer;
 }
 .carousel-wrap .slogan>.shop-btn:hover {
   background-color: #fdc42e;
