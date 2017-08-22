@@ -132,8 +132,54 @@ a:hover {
   padding: 30px 10px;
 }
 
+/** #header **/
+#header {
+  background:url(../img/bg-0.png) no-repeat center center;
+  background-size:cover;
+  text-align: center;
+  color: #fff;
+  background-color:#c4e9fc;
+}
+#header>.container {
+  text-align:center;
+  padding:50px 0;
+}
+#header .slogan {
+  padding-top: 250px;
+  padding-bottom: 200px;
+}
+#header .slogan>h3 {
+  color: #fff;
+  font-family:"Droid Serif", sans-serif , Arial, "Helvetica Neue", Helvetica ;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 26px;
+  margin-bottom:30px;
+}
+#header .slogan>h1 {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 75px;
+  margin-bottom: 50px;
+}
+#header .slogan>.btn {
+  color: #fff;
+  background-color: #fdd048;
+  border-color: #fdd048;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+#header .slogan>.btn:hover {
+  background-color: #fdc42e;
+  transition:.5s all;
+}
+
 /** banner **/
-.carousel-wrap {
+/*.carousel-wrap {
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -232,18 +278,16 @@ a:hover {
 }
 
 .bullet > li.active {
-  background-color: red;
+  background-color: silver;
 }
-
+*/
 /** #header **/
-.carousel-wrap .slogan {
+/*.carousel-wrap .slogan {
   position:absolute;
   left:25%;
   bottom:25%;
-  /*padding-top: 250px;
-  padding-bottom: 200px;*/
 }
-.carousel-wrap .slogan>h3 {
+/*.carousel-wrap .slogan>h3 {
   font-family:"Droid Serif", sans-serif , Arial, "Helvetica Neue", Helvetica ;
   font-style: italic;
   font-size: 30px;
@@ -274,7 +318,7 @@ a:hover {
 .carousel-wrap .slogan>.shop-btn:hover {
   background-color: #fdc42e;
   transition:.5s all;
-}
+}*/
 
 /** #services **/
 #services {
@@ -558,11 +602,13 @@ a:hover {
   height: 59px;
   padding-left:10px;
   margin-bottom: 25px;
+  outline: none;
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 4px;
   font-size:14px;
 }
 #contact .message>textarea {
+  outline: none;
   border: 1px solid #ddd;
   border-radius: 3px;
   font-size:16px;
@@ -575,6 +621,7 @@ a:hover {
   background-color: #f0ae00;
   font-size: 19px;
   padding: 10px 40px;
+  outline: none;
   border: 1px solid #f0ae00;
   border-radius: 3px;
   display:block;
